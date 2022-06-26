@@ -11,6 +11,8 @@
 		B44BBDA828681D080005BFEB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44BBDA728681D080005BFEB /* ContentView.swift */; };
 		B44BBDAA28681D090005BFEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B44BBDA928681D090005BFEB /* Assets.xcassets */; };
 		B44BBDAD28681D090005BFEB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B44BBDAC28681D090005BFEB /* Preview Assets.xcassets */; };
+		B44BBDC028681DEF0005BFEB /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44BBDBF28681DEF0005BFEB /* FeedView.swift */; };
+		B44BBDC32868259F0005BFEB /* TweetsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44BBDC22868259F0005BFEB /* TweetsRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		B44BBDA728681D080005BFEB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B44BBDA928681D090005BFEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B44BBDAC28681D090005BFEB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B44BBDBF28681DEF0005BFEB /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
+		B44BBDC22868259F0005BFEB /* TweetsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetsRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +55,10 @@
 		B44BBDA428681D080005BFEB /* Twitter Clone */ = {
 			isa = PBXGroup;
 			children = (
+				B44BBDB828681D3C0005BFEB /* Extensions */,
+				B44BBDB728681D3A0005BFEB /* Model */,
+				B44BBDB428681D2B0005BFEB /* Service */,
+				B44BBDB328681D220005BFEB /* Core */,
 				B44BBDA528681D080005BFEB /* Twitter_CloneApp.swift */,
 				B44BBDA728681D080005BFEB /* ContentView.swift */,
 				B44BBDA928681D090005BFEB /* Assets.xcassets */,
@@ -65,6 +73,76 @@
 				B44BBDAC28681D090005BFEB /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B44BBDB328681D220005BFEB /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				B44BBDB928681D590005BFEB /* Components */,
+				B44BBDBA28681D610005BFEB /* Feed */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		B44BBDB428681D2B0005BFEB /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		B44BBDB728681D3A0005BFEB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B44BBDB828681D3C0005BFEB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B44BBDB928681D590005BFEB /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B44BBDC1286825660005BFEB /* Tweets */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		B44BBDBA28681D610005BFEB /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				B44BBDBE28681DBD0005BFEB /* ViewModel's */,
+				B44BBDBB28681DA90005BFEB /* View */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		B44BBDBB28681DA90005BFEB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B44BBDBF28681DEF0005BFEB /* FeedView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B44BBDBE28681DBD0005BFEB /* ViewModel's */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "ViewModel's";
+			sourceTree = "<group>";
+		};
+		B44BBDC1286825660005BFEB /* Tweets */ = {
+			isa = PBXGroup;
+			children = (
+				B44BBDC22868259F0005BFEB /* TweetsRowView.swift */,
+			);
+			path = Tweets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +216,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B44BBDA828681D080005BFEB /* ContentView.swift in Sources */,
+				B44BBDC32868259F0005BFEB /* TweetsRowView.swift in Sources */,
+				B44BBDC028681DEF0005BFEB /* FeedView.swift in Sources */,
 				B44BBDA628681D080005BFEB /* Twitter_CloneApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,6 +347,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Twitter Clone/Preview Content\"";
+				DEVELOPMENT_TEAM = JXXZU5QJFC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -295,6 +376,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Twitter Clone/Preview Content\"";
+				DEVELOPMENT_TEAM = JXXZU5QJFC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

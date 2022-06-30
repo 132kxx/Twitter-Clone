@@ -49,9 +49,9 @@ extension ProfileView {
                 } label: {
                     Image(systemName: "arrow.left")
                         .resizable()
-                        .frame(width: 20, height: 16)
+                        .frame(width: 20, height: 13)
                         .foregroundColor(.white)
-                        .offset(x: 16, y: 12)
+                        .offset(x: 0, y: 5)
                 }
                 
                 Circle()
@@ -90,18 +90,18 @@ var userInfoDetails: some View {
     
     VStack(alignment: .leading, spacing: 4) {
         HStack{
-            Text("K NUNU")
+            Text("앙삐뽀")
                 .font(.title2).bold()
             
             Image(systemName: "checkmark.seal.fill")
                 .foregroundColor(Color(.systemBlue))
         }
         
-        Text("daeyeondong")
+        Text("토스 근무하시나봄")
             .font(.subheadline)
             .foregroundColor(.gray)
         
-        Text("I want to get a job")
+        Text("10원을 겟하라")
             .font(.subheadline)
             .padding(.vertical)
         

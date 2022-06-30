@@ -21,16 +21,16 @@ struct TweetsRowView: View {
                 VStack(alignment: .leading, spacing: 4){
                    //user info
                     HStack{
-                        Text("Bruce Wayne")
+                        Text("껌정구")
                             .font(.subheadline).bold()
                         Text("@nunu")
                             .foregroundColor(.gray)
                             .font(.caption)
-                        Text("2W")
+                        Text("1m ago")
                             .foregroundColor(.gray)
                             .font(.caption)
                     }
-                    Text("i am working")
+                    Text("껌정구 먹구름 비온다 샤랄라")
                         .font(.subheadline)
                 }
             }

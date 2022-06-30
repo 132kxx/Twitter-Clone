@@ -13,6 +13,11 @@
 		B44BBDAD28681D090005BFEB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B44BBDAC28681D090005BFEB /* Preview Assets.xcassets */; };
 		B44BBDC028681DEF0005BFEB /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44BBDBF28681DEF0005BFEB /* FeedView.swift */; };
 		B44BBDC32868259F0005BFEB /* TweetsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44BBDC22868259F0005BFEB /* TweetsRowView.swift */; };
+		B45B9AF9286D74B60077D2E0 /* SideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45B9AF8286D74B60077D2E0 /* SideMenuView.swift */; };
+		B45B9AFB286D74C60077D2E0 /* SideMenuRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45B9AFA286D74C60077D2E0 /* SideMenuRowView.swift */; };
+		B45B9AFE286D74F30077D2E0 /* SideMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45B9AFD286D74F30077D2E0 /* SideMenuViewModel.swift */; };
+		B45B9B01286D78D20077D2E0 /* UserStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45B9B00286D78D20077D2E0 /* UserStatsView.swift */; };
+		B45B9B03286D89640077D2E0 /* SideMenuOptionRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45B9B02286D89640077D2E0 /* SideMenuOptionRowView.swift */; };
 		B4C3E6D9286AC11E008B525A /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C3E6D8286AC11E008B525A /* MainTabView.swift */; };
 		B4C3E6E0286AC36B008B525A /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C3E6DF286AC36B008B525A /* ExploreView.swift */; };
 		B4C3E6E2286ACEF8008B525A /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C3E6E1286ACEF8008B525A /* NotificationsView.swift */; };
@@ -29,6 +34,11 @@
 		B44BBDAC28681D090005BFEB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B44BBDBF28681DEF0005BFEB /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		B44BBDC22868259F0005BFEB /* TweetsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetsRowView.swift; sourceTree = "<group>"; };
+		B45B9AF8286D74B60077D2E0 /* SideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuView.swift; sourceTree = "<group>"; };
+		B45B9AFA286D74C60077D2E0 /* SideMenuRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuRowView.swift; sourceTree = "<group>"; };
+		B45B9AFD286D74F30077D2E0 /* SideMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewModel.swift; sourceTree = "<group>"; };
+		B45B9B00286D78D20077D2E0 /* UserStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStatsView.swift; sourceTree = "<group>"; };
+		B45B9B02286D89640077D2E0 /* SideMenuOptionRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuOptionRowView.swift; sourceTree = "<group>"; };
 		B4C3E6D8286AC11E008B525A /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		B4C3E6DF286AC36B008B525A /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
 		B4C3E6E1286ACEF8008B525A /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
@@ -91,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				B44BBDB928681D590005BFEB /* Components */,
+				B45B9AF5286D74830077D2E0 /* SideMenu */,
 				B4C3E6DE286AC341008B525A /* Profile */,
 				B4C3E6DD286AC317008B525A /* Explore */,
 				B4C3E6DC286AC315008B525A /* Notifications */,
@@ -125,6 +136,7 @@
 		B44BBDB928681D590005BFEB /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				B45B9AFF286D78C30077D2E0 /* Users */,
 				B44BBDC1286825660005BFEB /* Tweets */,
 			);
 			path = Components;
@@ -160,6 +172,41 @@
 				B44BBDC22868259F0005BFEB /* TweetsRowView.swift */,
 			);
 			path = Tweets;
+			sourceTree = "<group>";
+		};
+		B45B9AF5286D74830077D2E0 /* SideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				B45B9AF7286D74930077D2E0 /* VidewModel */,
+				B45B9AF6286D74920077D2E0 /* Views */,
+			);
+			path = SideMenu;
+			sourceTree = "<group>";
+		};
+		B45B9AF6286D74920077D2E0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B45B9AF8286D74B60077D2E0 /* SideMenuView.swift */,
+				B45B9AFA286D74C60077D2E0 /* SideMenuRowView.swift */,
+				B45B9B02286D89640077D2E0 /* SideMenuOptionRowView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B45B9AF7286D74930077D2E0 /* VidewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B45B9AFD286D74F30077D2E0 /* SideMenuViewModel.swift */,
+			);
+			path = VidewModel;
+			sourceTree = "<group>";
+		};
+		B45B9AFF286D78C30077D2E0 /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				B45B9B00286D78D20077D2E0 /* UserStatsView.swift */,
+			);
+			path = Users;
 			sourceTree = "<group>";
 		};
 		B4C3E6D7286AC0E9008B525A /* MainTab */ = {
@@ -294,8 +341,13 @@
 				B4C3E6E8286AEAFC008B525A /* ProfileView.swift in Sources */,
 				B44BBDA828681D080005BFEB /* ContentView.swift in Sources */,
 				B44BBDC32868259F0005BFEB /* TweetsRowView.swift in Sources */,
+				B45B9AF9286D74B60077D2E0 /* SideMenuView.swift in Sources */,
+				B45B9AFB286D74C60077D2E0 /* SideMenuRowView.swift in Sources */,
 				B4C3E6EA286B02DA008B525A /* TweetFilterViewModel.swift in Sources */,
+				B45B9B01286D78D20077D2E0 /* UserStatsView.swift in Sources */,
 				B44BBDC028681DEF0005BFEB /* FeedView.swift in Sources */,
+				B45B9AFE286D74F30077D2E0 /* SideMenuViewModel.swift in Sources */,
+				B45B9B03286D89640077D2E0 /* SideMenuOptionRowView.swift in Sources */,
 				B44BBDA628681D080005BFEB /* Twitter_CloneApp.swift in Sources */,
 				B4C3E6E0286AC36B008B525A /* ExploreView.swift in Sources */,
 				B4C3E6D9286AC11E008B525A /* MainTabView.swift in Sources */,
